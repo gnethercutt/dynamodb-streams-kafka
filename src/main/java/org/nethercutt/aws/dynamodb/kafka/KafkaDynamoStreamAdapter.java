@@ -39,9 +39,13 @@ public class KafkaDynamoStreamAdapter {
     private int maxRecordsPerRead = DEFAULT_MAX_RECORDS_PER_READ;
 
     public KafkaDynamoStreamAdapter(String brokerList, String srcTable, String targetTopic) {
+        this(srcTable, new KafkaForwardingStreamsRecordProcessorFactory(brokerList, targetTopic));
+    }
+    
+    public KafkaDynamoStreamAdapter(String srcTable, IRecordProcessorFactory processorFactory) {
         sourceTable = srcTable;
         credentialsProvider = new DefaultAWSCredentialsProviderChain();
-        recordProcessorFactory = new KafkaForwardingStreamsRecordProcessorFactory(brokerList, targetTopic);
+        recordProcessorFactory = processorFactory;
 
         adapterClient = new AmazonDynamoDBStreamsAdapterClient(credentialsProvider, new ClientConfiguration());
         dynamoDBClient = new AmazonDynamoDBClient(credentialsProvider, new ClientConfiguration());
@@ -101,7 +105,7 @@ public class KafkaDynamoStreamAdapter {
             .withInitialPositionInStream(InitialPositionInStream.TRIM_HORIZON);   
         worker = new Worker(recordProcessorFactory, workerConfig, adapterClient, dynamoDBClient, cloudWatchClient);
         workerThread = new Thread(worker);
-        workerThread.start();    
+        workerThread.start();
     }
     
     public void shutdown() throws InterruptedException {
