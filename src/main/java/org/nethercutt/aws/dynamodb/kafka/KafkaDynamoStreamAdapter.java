@@ -3,6 +3,8 @@ package org.nethercutt.aws.dynamodb.kafka;
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.regions.Region;
+import com.amazonaws.regions.Regions;
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClient;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.model.DescribeTableRequest;
@@ -20,6 +22,8 @@ import com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker;
 public class KafkaDynamoStreamAdapter {
     private static final String KCL_WORKER_NAME = "dynamodb-kafka-worker";
     private static final String KCL_APP_NAME = "dynamodb-streams-kafka";
+    private static final String localddbEndpoint = "http://localhost:8000";
+
     private static final int DEFAULT_IDLE_TIME_BETWEEN_READS_MSEC = 100;
     private static final int DEFAULT_MAX_RECORDS_PER_READ = 1;
     
@@ -39,10 +43,10 @@ public class KafkaDynamoStreamAdapter {
     private int maxRecordsPerRead = DEFAULT_MAX_RECORDS_PER_READ;
 
     public KafkaDynamoStreamAdapter(String brokerList, String srcTable, String targetTopic) {
-        this(srcTable, new KafkaForwardingStreamsRecordProcessorFactory(brokerList, targetTopic));
+        this(null, srcTable, new KafkaForwardingStreamsRecordProcessorFactory(brokerList, targetTopic));
     }
     
-    public KafkaDynamoStreamAdapter(String srcTable, IRecordProcessorFactory processorFactory) {
+    public KafkaDynamoStreamAdapter(String regionName, String srcTable, IRecordProcessorFactory processorFactory) {
         sourceTable = srcTable;
         credentialsProvider = new DefaultAWSCredentialsProviderChain();
         recordProcessorFactory = processorFactory;
@@ -50,6 +54,15 @@ public class KafkaDynamoStreamAdapter {
         adapterClient = new AmazonDynamoDBStreamsAdapterClient(credentialsProvider, new ClientConfiguration());
         dynamoDBClient = new AmazonDynamoDBClient(credentialsProvider, new ClientConfiguration());
         cloudWatchClient = new AmazonCloudWatchClient(credentialsProvider, new ClientConfiguration());
+
+        if ("local".equalsIgnoreCase(regionName)) {
+            setClientEndpoints(localddbEndpoint);
+        } else if (regionName != null) {
+            Region region = Region.getRegion(Regions.fromName(regionName));
+            adapterClient.setRegion(region);
+            dynamoDBClient.setRegion(region);
+            cloudWatchClient.setRegion(region);
+        }
     }
     
     AmazonDynamoDBClient getDynamoDBClient() {

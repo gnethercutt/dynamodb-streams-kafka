@@ -15,7 +15,6 @@ import org.apache.commons.cli.PosixParser;
 
 public class StreamAdapterRunner {
     private Properties props;
-    private static String localddbEndpoint = "http://localhost:8000";
 
     public StreamAdapterRunner() {
         props = new Properties();
@@ -24,7 +23,7 @@ public class StreamAdapterRunner {
     public void run(String[] args) throws FileNotFoundException, IOException, ParseException, InterruptedException {
         Options options = new Options();
 
-        options.addOption("f", true, "properties filename from the filesystem");
+        options.addOption("f", true, "properties file");
 
         CommandLineParser parser = new PosixParser();
         CommandLine cmd = parser.parse(options, args);
@@ -43,9 +42,17 @@ public class StreamAdapterRunner {
         }
         
         KafkaDynamoStreamAdapter streamAdapter = new KafkaDynamoStreamAdapter(
+                props.getProperty("aws.region"),
                 props.getProperty("dynamodb.sourceTable"), 
                 new KafkaForwardingStreamsRecordProcessorFactory(props.getProperty("kafka.brokers"), props.getProperty("kafka.targetTopic")));
-        streamAdapter.setClientEndpoints(localddbEndpoint);
+        String idleTimeBetweenReads = props.getProperty("dynamodb.idleTimeBetweenReads");
+        if (idleTimeBetweenReads != null) {
+            streamAdapter.setIdleTimeBetweenReads(Integer.valueOf(idleTimeBetweenReads));
+        }
+        String maxRecordsPerRead = props.getProperty("dynamodb.maxRecordsPerRead");
+        if (maxRecordsPerRead != null) {
+            streamAdapter.setMaxRecordsPerRead(Integer.valueOf(idleTimeBetweenReads));
+        }
         streamAdapter.run();
     }
     

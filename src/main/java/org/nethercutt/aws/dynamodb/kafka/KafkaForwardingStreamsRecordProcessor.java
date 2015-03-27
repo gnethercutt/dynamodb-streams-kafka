@@ -21,11 +21,14 @@ public class KafkaForwardingStreamsRecordProcessor implements IRecordProcessor {
     private Producer<String, String> producer;
     private String topic;
 
+    private MessageFactory messageFactory;
+
     public KafkaForwardingStreamsRecordProcessor(Properties producerConfigProps, String topic) {
         ProducerConfig config = new ProducerConfig(producerConfigProps);
-        producer = new Producer<String, String>(config);
+        this.producer = new Producer<String, String>(config);
         this.topic = topic;
         this.checkpointFrequency = DEFAULT_CHECKPOINT_FREQUENCY;
+        this.messageFactory = new MessageFactoryImpl();
     }
 
     @Override
@@ -36,9 +39,7 @@ public class KafkaForwardingStreamsRecordProcessor implements IRecordProcessor {
     @Override
     public void processRecords(List<Record> records, IRecordProcessorCheckpointer checkpointer) {
         for (Record record : records) {
-            String data = new String(record.getData().array(), Charset.forName("UTF-8"));
-            KeyedMessage<String, String> msg = new KeyedMessage<String, String>(topic, record.getPartitionKey(), data);
-            producer.send(msg);
+            producer.send(messageFactory.createMessage(record, topic));
 
             if(++checkpointCounter % checkpointFrequency == 0) {
                 try {
@@ -64,5 +65,9 @@ public class KafkaForwardingStreamsRecordProcessor implements IRecordProcessor {
 
     public void setCheckpointFrequency(int checkpointFrequency) {
         this.checkpointFrequency = checkpointFrequency;
+    }
+    
+    public void setMessageFactory(MessageFactory messageFactory) {
+        this.messageFactory = messageFactory;
     }
 }
