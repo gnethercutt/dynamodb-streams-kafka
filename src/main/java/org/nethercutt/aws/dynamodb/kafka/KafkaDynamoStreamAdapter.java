@@ -41,6 +41,7 @@ public class KafkaDynamoStreamAdapter {
     
     private int idleTimeBetweenReads = DEFAULT_IDLE_TIME_BETWEEN_READS_MSEC;
     private int maxRecordsPerRead = DEFAULT_MAX_RECORDS_PER_READ;
+    private InitialPositionInStream initialStreamPosition = InitialPositionInStream.TRIM_HORIZON;
 
     public KafkaDynamoStreamAdapter(String brokerList, String srcTable, String targetTopic) {
         this(null, srcTable, new KafkaForwardingStreamsRecordProcessorFactory(brokerList, targetTopic));
@@ -90,6 +91,14 @@ public class KafkaDynamoStreamAdapter {
         maxRecordsPerRead = maxRecords;
     }
     
+    public InitialPositionInStream getInitialStreamPoisition() {
+        return initialStreamPosition;
+    }
+
+    public void setInitialStreamPosition(InitialPositionInStream initialPosition) {
+        initialStreamPosition = initialPosition;
+    }
+
     private String enableStreamForTable(AmazonDynamoDBClient client, StreamViewType viewType, String tableName) {
         DescribeTableRequest describeTableRequest = new DescribeTableRequest()
             .withTableName(tableName);
@@ -115,7 +124,7 @@ public class KafkaDynamoStreamAdapter {
         workerConfig = new KinesisClientLibConfiguration(KCL_APP_NAME, streamId, credentialsProvider, KCL_WORKER_NAME)
             .withMaxRecords(maxRecordsPerRead)
             .withIdleTimeBetweenReadsInMillis(idleTimeBetweenReads)
-            .withInitialPositionInStream(InitialPositionInStream.TRIM_HORIZON);   
+            .withInitialPositionInStream(initialStreamPosition );
         worker = new Worker(recordProcessorFactory, workerConfig, adapterClient, dynamoDBClient, cloudWatchClient);
         workerThread = new Thread(worker);
         workerThread.start();
