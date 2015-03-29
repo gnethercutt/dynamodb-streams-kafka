@@ -14,10 +14,11 @@ An implementation of an adapter for publishing DynamoDB Streams notifications to
 
 # Building from source
 ---------------
-Install the AWS SDK preview with DynamoDB Streams support:
+* Install the AWS SDK preview with DynamoDB Streams support:
 `cd ~/src/aws-java-sdk-1.9.4a-preview; mvn install:install-file  -Dfile=aws-java-sdk-1.9.4a-preview/lib/aws-java-sdk-1.9.4a-preview.jar  -DgroupId=com.amazonaws  -DartifactId=aws-java-sdk -Dversion=1.9.4a-preview -Dpackaging=jar`
-Install the DynamoDB Streams Kinesis adapter:
+* Install the DynamoDB Streams Kinesis adapter:
 `cd ~/src/dynamodb-streams-kinesis-adapter; mvn clean install -Dgpg.skip=true`
+* Build with maven: `mvn package`
 
 # Demo
 ---------------
