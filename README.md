@@ -1,7 +1,7 @@
 dynamodb-streams-kafka
 =======
 
-An implementation of an adapter for publishing DynamoDB Streams notifications to a Kafka topic.
+Implementation of an adapter for publishing DynamoDB Streams notifications to a Kafka topic.
 
 # Getting Started
 ---------------
@@ -9,31 +9,39 @@ An implementation of an adapter for publishing DynamoDB Streams notifications to
 * [Zookeeper](https://zookeeper.apache.org/)
 * [Kafka](https://kafka.apache.org/)
 * The [preview AWS SDK with DynamoDB Streams support](http://dynamodb-preview.s3-website-us-west-2.amazonaws.com/aws-java-sdk-latest-preview.zip)
-* [DynamoDB Streams adapter](https://github.com/awslabs/dynamodb-streams-kinesis-adapter)
+* [DynamoDB Streams Kinesis adapter](https://github.com/awslabs/dynamodb-streams-kinesis-adapter)
 * (Optional) [DynamoDB Local](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLocal.html)
 
 # Building from source
 ---------------
 * Install the AWS SDK preview with DynamoDB Streams support:
+
 `cd ~/src/aws-java-sdk-1.9.4a-preview; mvn install:install-file  -Dfile=aws-java-sdk-1.9.4a-preview/lib/aws-java-sdk-1.9.4a-preview.jar  -DgroupId=com.amazonaws  -DartifactId=aws-java-sdk -Dversion=1.9.4a-preview -Dpackaging=jar`
 * Install the DynamoDB Streams Kinesis adapter:
+
 `cd ~/src/dynamodb-streams-kinesis-adapter; mvn clean install -Dgpg.skip=true`
-* Build with maven: `mvn package`
+* Build with maven: 
+
+`mvn package`
 
 # Demo
 ---------------
 ## Setup the prerequisites
 
-Start zookeeper:        `zkServer start`
-Start Kafka:            `kafka-server-start.sh path/to/config/server.properties`
-Create topic:           `kafka-topics.sh --create --topic dynamostream --replication-factor 1 --zookeeper localhost:2181 --partitions 8`
-Run console listener:   `kafka-console-consumer.sh --zookeeper localhost:2181 --topic dynamostream`
-Start DynamoDBLocal:    `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -inMemory`
-Create dynamo table:    `java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -c`
+* Start zookeeper:        `zkServer start`
+* Start Kafka:            `kafka-server-start.sh path/to/config/server.properties`
+* Create topic:           `kafka-topics.sh --create --topic dynamostream --replication-factor 1 --zookeeper localhost:2181 --partitions 8`
+* Run console listener:   `kafka-console-consumer.sh --zookeeper localhost:2181 --topic dynamostream`
+* Start DynamoDBLocal:    `java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -inMemory`
+* Create dynamo table:    `java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -c`
 
 ## Run the adapter and generate some DynamoDB traffic
-Start the adapter:      `java -jar target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar -f src/main/resources/example.conf
-Generate DynamoDB ops:  `java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -t`
+* Start the adapter:      
+
+`java -jar target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar -f src/main/resources/example.conf`
+* Generate DynamoDB ops:  
+
+`java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -t`
 
 ## Example Kafka events:
 ```javascript
