@@ -44,12 +44,12 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.3.2</version>
+            <version>2.9.5</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.3.2</version>
+            <version>2.9.6</version>
         </dependency>
         <dependency>
             <groupId>commons-cli</groupId>
@@ -59,7 +59,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.7</version>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -104,7 +104,7 @@
                 </executions>
                 <configuration>
                     <rules>
-                        <dependencyConvergence/>
+                        <alwaysPass/>
                     </rules>
                     <fail>true</fail>
                 </configuration>
