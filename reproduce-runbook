@@ -1,0 +1,36 @@
+1. start zookeeper 
+use zookeeper-3.4.12
+cd zookeeper-3.4.12; bin/zkServer.sh  start
+
+2. start kafka 
+use kafka_2.11-1.1.0
+cd kafka_2.11-1.1.0; bin/kafka-server-start.sh config/server.properties
+
+3. create kafka topic
+cd kafka_2.11-1.1.0;
+bin/kafka-topics.sh --create --topic dynamostream --replication-factor 1 --zookeeper localhost:2181 --partitions 8
+
+4. start the console consumer
+cd kafka_2.11-1.1.0;
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic dynamostream
+
+5. start DynamoDB locally 
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+download the zip
+cd dynamodb_local_latest;
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -inMemory
+
+6. create the Dynamotable 
+go to the flink job folder
+mvn clean package;
+Note this, this step we may not need fat jar, either should be working
+java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -c
+
+7. start the flink adapter (this is where we have problem)
+cd {Dan-flink-job-test-folder}
+java -jar target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar -f src/main/resources/example.conf
+Note that, if we do mvn clean package. the fat jar does not work either. same error
+java -jar target/dynamodb-streams-kafka-0.1-SNAPSHOT-jar-with-dependencies.jar  -f src/main/resources/example.conf
+
+8. use the flink adapter to generate traffic 
+java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -t
