@@ -26,7 +26,7 @@ public class KafkaDynamoStreamAdapter {
 
     private static final int DEFAULT_IDLE_TIME_BETWEEN_READS_MSEC = 100;
     private static final int DEFAULT_MAX_RECORDS_PER_READ = 1;
-    
+
     private KinesisClientLibConfiguration workerConfig;
     private IRecordProcessorFactory recordProcessorFactory;
     private AWSCredentialsProvider credentialsProvider;
@@ -38,7 +38,7 @@ public class KafkaDynamoStreamAdapter {
     private String streamId;
     private Thread workerThread;
     private Worker worker;
-    
+
     private int idleTimeBetweenReads = DEFAULT_IDLE_TIME_BETWEEN_READS_MSEC;
     private int maxRecordsPerRead = DEFAULT_MAX_RECORDS_PER_READ;
     private InitialPositionInStream initialStreamPosition = InitialPositionInStream.TRIM_HORIZON;
@@ -46,7 +46,7 @@ public class KafkaDynamoStreamAdapter {
     public KafkaDynamoStreamAdapter(String brokerList, String srcTable, String targetTopic) {
         this(null, srcTable, new KafkaForwardingStreamsRecordProcessorFactory(brokerList, targetTopic));
     }
-    
+
     public KafkaDynamoStreamAdapter(String regionName, String srcTable, IRecordProcessorFactory processorFactory) {
         sourceTable = srcTable;
         credentialsProvider = new DefaultAWSCredentialsProviderChain();
@@ -65,32 +65,32 @@ public class KafkaDynamoStreamAdapter {
             cloudWatchClient.setRegion(region);
         }
     }
-    
+
     AmazonDynamoDBClient getDynamoDBClient() {
         return dynamoDBClient;
     }
-    
+
     public void setClientEndpoints(String endpoint) {
         adapterClient.setEndpoint(endpoint);
         dynamoDBClient.setEndpoint(endpoint);
     }
-    
+
     public int getIdleTimeBetweenReads() {
         return idleTimeBetweenReads;
     }
-    
+
     public void setIdleTimeBetweenReads(int msec) {
         idleTimeBetweenReads = msec;
     }
-    
+
     public int getMaxRecordsPerRead() {
         return maxRecordsPerRead;
     }
-    
+
     public void setMaxRecordsPerRead(int maxRecords) {
         maxRecordsPerRead = maxRecords;
     }
-    
+
     public InitialPositionInStream getInitialStreamPoisition() {
         return initialStreamPosition;
     }
@@ -101,7 +101,7 @@ public class KafkaDynamoStreamAdapter {
 
     private String enableStreamForTable(AmazonDynamoDBClient client, StreamViewType viewType, String tableName) {
         DescribeTableRequest describeTableRequest = new DescribeTableRequest()
-            .withTableName(tableName);
+                .withTableName(tableName);
         DescribeTableResult describeResult = client.describeTable(describeTableRequest);
         if (describeResult.getTable().getStreamSpecification().isStreamEnabled()) {
             //TODO: what if the viewtype doesn't match
@@ -112,26 +112,26 @@ public class KafkaDynamoStreamAdapter {
         streamSpecification.setStreamEnabled(true);
         streamSpecification.setStreamViewType(viewType);
         UpdateTableRequest updateTableRequest = new UpdateTableRequest()
-            .withTableName(tableName)
-            .withStreamSpecification(streamSpecification);
+                .withTableName(tableName)
+                .withStreamSpecification(streamSpecification);
 
         UpdateTableResult result = client.updateTable(updateTableRequest);
         return result.getTableDescription().getLatestStreamArn();
     }
-    
+
     public void run() {
         streamId = enableStreamForTable(dynamoDBClient, StreamViewType.NEW_IMAGE, sourceTable);
         workerConfig = new KinesisClientLibConfiguration(KCL_APP_NAME, streamId, credentialsProvider, KCL_WORKER_NAME)
-            .withMaxRecords(maxRecordsPerRead)
-            .withIdleTimeBetweenReadsInMillis(idleTimeBetweenReads)
-            .withInitialPositionInStream(initialStreamPosition );
+                .withMaxRecords(maxRecordsPerRead)
+                .withIdleTimeBetweenReadsInMillis(idleTimeBetweenReads)
+                .withInitialPositionInStream(initialStreamPosition);
         worker = new Worker(recordProcessorFactory, workerConfig, adapterClient, dynamoDBClient, cloudWatchClient);
         workerThread = new Thread(worker);
         workerThread.start();
     }
-    
+
     public void shutdown() throws InterruptedException {
         worker.shutdown();
-        workerThread.join();  
+        workerThread.join();
     }
 }

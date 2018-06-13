@@ -41,10 +41,10 @@ public class KafkaForwardingStreamsRecordProcessor implements IRecordProcessor {
         for (Record record : records) {
             producer.send(messageFactory.createMessage(record, topic));
 
-            if(++checkpointCounter % checkpointFrequency == 0) {
+            if (++checkpointCounter % checkpointFrequency == 0) {
                 try {
                     checkpointer.checkpoint();
-                } catch(Exception e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -54,7 +54,7 @@ public class KafkaForwardingStreamsRecordProcessor implements IRecordProcessor {
 
     @Override
     public void shutdown(IRecordProcessorCheckpointer checkpointer, ShutdownReason reason) {
-        if(reason == ShutdownReason.TERMINATE) {
+        if (reason == ShutdownReason.TERMINATE) {
             try {
                 checkpointer.checkpoint();
             } catch (Exception e) {
@@ -66,7 +66,7 @@ public class KafkaForwardingStreamsRecordProcessor implements IRecordProcessor {
     public void setCheckpointFrequency(int checkpointFrequency) {
         this.checkpointFrequency = checkpointFrequency;
     }
-    
+
     public void setMessageFactory(MessageFactory messageFactory) {
         this.messageFactory = messageFactory;
     }

@@ -9,7 +9,7 @@ public class KafkaForwardingStreamsRecordProcessorFactory implements IRecordProc
     private String topic;
     private Properties props;
 
-    public KafkaForwardingStreamsRecordProcessorFactory(String brokerList, String topic) { 
+    public KafkaForwardingStreamsRecordProcessorFactory(String brokerList, String topic) {
         this.topic = topic;
         this.props = new Properties();
         props.put("metadata.broker.list", brokerList);
