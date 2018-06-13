@@ -48,7 +48,7 @@ public class StreamAdapterDemoHelper {
         DescribeTableResult describeResult = client.describeTable(describeTableRequest);
         if (describeResult.getTable().getStreamSpecification().isStreamEnabled()) {
             //TODO: what if the viewtype doesn't match
-            return describeResult.getTable().getLatestStreamId();
+            return describeResult.getTable().getLatestStreamArn();
         }
 
         StreamSpecification streamSpecification = new StreamSpecification();
@@ -59,7 +59,7 @@ public class StreamAdapterDemoHelper {
             .withStreamSpecification(streamSpecification);
 
         UpdateTableResult result = client.updateTable(updateTableRequest);
-        return result.getTableDescription().getLatestStreamId();
+        return result.getTableDescription().getLatestStreamArn();
     }
 
     public static String createTable(AmazonDynamoDBClient client, String tableName) {
@@ -85,10 +85,10 @@ public class StreamAdapterDemoHelper {
         try {
             System.out.println("Creating table " + tableName);
             CreateTableResult result = client.createTable(createTableRequest);
-            return result.getTableDescription().getLatestStreamId();
+            return result.getTableDescription().getLatestStreamArn();
         } catch(ResourceInUseException e) {
             System.out.println("Table already exists.");
-            return describeTable(client, tableName).getTable().getLatestStreamId();
+            return describeTable(client, tableName).getTable().getLatestStreamArn();
         }
     }
 

@@ -105,7 +105,7 @@ public class KafkaDynamoStreamAdapter {
         DescribeTableResult describeResult = client.describeTable(describeTableRequest);
         if (describeResult.getTable().getStreamSpecification().isStreamEnabled()) {
             //TODO: what if the viewtype doesn't match
-            return describeResult.getTable().getLatestStreamId();
+            return describeResult.getTable().getLatestStreamArn();
         }
 
         StreamSpecification streamSpecification = new StreamSpecification();
@@ -116,7 +116,7 @@ public class KafkaDynamoStreamAdapter {
             .withStreamSpecification(streamSpecification);
 
         UpdateTableResult result = client.updateTable(updateTableRequest);
-        return result.getTableDescription().getLatestStreamId();
+        return result.getTableDescription().getLatestStreamArn();
     }
     
     public void run() {
