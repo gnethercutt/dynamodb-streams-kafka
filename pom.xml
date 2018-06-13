@@ -12,8 +12,7 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<encoding>UTF-8</encoding>
 		<kafka.scala.version>2.12</kafka.scala.version>
-		<scala-library.version>2.13.0-M4</scala-library.version>
-
+		<scala-library.version>2.12.0</scala-library.version>
 	</properties>
 
 	<dependencies>
