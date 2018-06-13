@@ -1,0 +1,1478 @@
+2018-06-13 12:08:22,904 INFO [com.amazonaws.services.kinesis.leases.impl.LeaseCoordinator] - With failover time 10000 ms and epsilon 25 ms, LeaseCoordinator will renew leases every 3308 ms, takeleases every 20050 ms, process maximum of 2147483647 leases and steal 1 lease(s) at a time. 
+2018-06-13 12:08:22,905 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Initialization attempt 1 
+2018-06-13 12:08:22,906 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Initializing LeaseCoordinator 
+2018-06-13 12:08:22,915 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Syncing Kinesis shard info 
+2018-06-13 12:08:22,971 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Starting LeaseCoordinator 
+2018-06-13 12:08:22,976 INFO [com.amazonaws.services.kinesis.leases.impl.LeaseRenewer] -  Worker dynamodb-kafka-worker found lease {
+  "leaseKey" : "shardId-00000001528915635422-b6aeb481",
+  "leaseOwner" : "dynamodb-kafka-worker",
+  "leaseCounter" : 103,
+  "concurrencyToken" : null,
+  "lastCounterIncrementNanos" : null,
+  "checkpoint" : {
+    "sequenceNumber" : "TRIM_HORIZON",
+    "subSequenceNumber" : 0
+  },
+  "ownerSwitchesSinceCheckpoint" : 0,
+  "parentShardIds" : [ "shardId-00000001528901235243-889c8a3f" ]
+} 
+2018-06-13 12:08:22,984 WARN [com.amazonaws.services.kinesis.metrics.impl.MetricsHelper] - No metrics scope set in thread Thread-2, getMetricsScope returning NullMetricsScope. 
+2018-06-13 12:08:22,984 INFO [com.amazonaws.services.kinesis.leases.impl.LeaseRenewer] -  Worker dynamodb-kafka-worker found lease {
+  "leaseKey" : "shardId-00000001528872434889-5f4f7d48",
+  "leaseOwner" : "dynamodb-kafka-worker",
+  "leaseCounter" : 163,
+  "concurrencyToken" : null,
+  "lastCounterIncrementNanos" : null,
+  "checkpoint" : {
+    "sequenceNumber" : "TRIM_HORIZON",
+    "subSequenceNumber" : 0
+  },
+  "ownerSwitchesSinceCheckpoint" : 0,
+  "parentShardIds" : [ ]
+} 
+2018-06-13 12:08:22,988 WARN [com.amazonaws.services.kinesis.metrics.impl.MetricsHelper] - No metrics scope set in thread Thread-2, getMetricsScope returning NullMetricsScope. 
+2018-06-13 12:08:22,988 INFO [com.amazonaws.services.kinesis.leases.impl.LeaseRenewer] -  Worker dynamodb-kafka-worker found lease {
+  "leaseKey" : "shardId-00000001528901235243-889c8a3f",
+  "leaseOwner" : "dynamodb-kafka-worker",
+  "leaseCounter" : 146,
+  "concurrencyToken" : null,
+  "lastCounterIncrementNanos" : null,
+  "checkpoint" : {
+    "sequenceNumber" : "TRIM_HORIZON",
+    "subSequenceNumber" : 0
+  },
+  "ownerSwitchesSinceCheckpoint" : 0,
+  "parentShardIds" : [ "shardId-00000001528886835046-1f7449d2" ]
+} 
+2018-06-13 12:08:22,992 WARN [com.amazonaws.services.kinesis.metrics.impl.MetricsHelper] - No metrics scope set in thread Thread-2, getMetricsScope returning NullMetricsScope. 
+2018-06-13 12:08:22,992 INFO [com.amazonaws.services.kinesis.leases.impl.LeaseRenewer] -  Worker dynamodb-kafka-worker found lease {
+  "leaseKey" : "shardId-00000001528886835046-1f7449d2",
+  "leaseOwner" : "dynamodb-kafka-worker",
+  "leaseCounter" : 146,
+  "concurrencyToken" : null,
+  "lastCounterIncrementNanos" : null,
+  "checkpoint" : {
+    "sequenceNumber" : "TRIM_HORIZON",
+    "subSequenceNumber" : 0
+  },
+  "ownerSwitchesSinceCheckpoint" : 0,
+  "parentShardIds" : [ "shardId-00000001528872434889-5f4f7d48" ]
+} 
+2018-06-13 12:08:23,002 WARN [com.amazonaws.services.kinesis.metrics.impl.MetricsHelper] - No metrics scope set in thread Thread-2, getMetricsScope returning NullMetricsScope. 
+2018-06-13 12:08:33,008 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Initialization complete. Starting worker loop. 
+2018-06-13 12:08:33,033 INFO [kafka.utils.Log4jControllerRegistration$] - Registered kafka:type=kafka.Log4jController MBean 
+2018-06-13 12:08:33,296 INFO [kafka.utils.VerifiableProperties] - Verifying properties 
+2018-06-13 12:08:33,330 INFO [kafka.utils.VerifiableProperties] - Property metadata.broker.list is overridden to localhost:9092 
+2018-06-13 12:08:33,330 INFO [kafka.utils.VerifiableProperties] - Property request.required.acks is overridden to 1 
+2018-06-13 12:08:33,330 INFO [kafka.utils.VerifiableProperties] - Property serializer.class is overridden to kafka.serializer.StringEncoder 
+2018-06-13 12:08:33,380 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Created new shardConsumer for : ShardInfo [shardId=shardId-00000001528872434889-5f4f7d48, concurrencyToken=88fc56cc-0d32-4c94-a89d-52756b868889, parentShardIds=[], checkpoint={SequenceNumber: TRIM_HORIZON,SubsequenceNumber: 0}] 
+2018-06-13 12:08:33,381 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.BlockOnParentShardTask] - No need to block on parents [] of shard shardId-00000001528872434889-5f4f7d48 
+2018-06-13 12:08:33,381 INFO [kafka.utils.VerifiableProperties] - Verifying properties 
+2018-06-13 12:08:33,381 INFO [kafka.utils.VerifiableProperties] - Property metadata.broker.list is overridden to localhost:9092 
+2018-06-13 12:08:33,382 INFO [kafka.utils.VerifiableProperties] - Property request.required.acks is overridden to 1 
+2018-06-13 12:08:33,382 INFO [kafka.utils.VerifiableProperties] - Property serializer.class is overridden to kafka.serializer.StringEncoder 
+2018-06-13 12:08:33,382 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Created new shardConsumer for : ShardInfo [shardId=shardId-00000001528901235243-889c8a3f, concurrencyToken=3ee427e5-8002-4bcf-8179-3d440f6a4c18, parentShardIds=[shardId-00000001528886835046-1f7449d2], checkpoint={SequenceNumber: TRIM_HORIZON,SubsequenceNumber: 0}] 
+2018-06-13 12:08:33,382 INFO [kafka.utils.VerifiableProperties] - Verifying properties 
+2018-06-13 12:08:33,383 INFO [kafka.utils.VerifiableProperties] - Property metadata.broker.list is overridden to localhost:9092 
+2018-06-13 12:08:33,383 INFO [kafka.utils.VerifiableProperties] - Property request.required.acks is overridden to 1 
+2018-06-13 12:08:33,383 INFO [kafka.utils.VerifiableProperties] - Property serializer.class is overridden to kafka.serializer.StringEncoder 
+2018-06-13 12:08:33,384 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Created new shardConsumer for : ShardInfo [shardId=shardId-00000001528886835046-1f7449d2, concurrencyToken=758cb14b-cc3b-4e4e-8bdd-0720ae3d9f8e, parentShardIds=[shardId-00000001528872434889-5f4f7d48], checkpoint={SequenceNumber: TRIM_HORIZON,SubsequenceNumber: 0}] 
+2018-06-13 12:08:33,384 INFO [kafka.utils.VerifiableProperties] - Verifying properties 
+2018-06-13 12:08:33,384 INFO [kafka.utils.VerifiableProperties] - Property metadata.broker.list is overridden to localhost:9092 
+2018-06-13 12:08:33,384 INFO [kafka.utils.VerifiableProperties] - Property request.required.acks is overridden to 1 
+2018-06-13 12:08:33,384 INFO [kafka.utils.VerifiableProperties] - Property serializer.class is overridden to kafka.serializer.StringEncoder 
+2018-06-13 12:08:33,385 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Created new shardConsumer for : ShardInfo [shardId=shardId-00000001528915635422-b6aeb481, concurrencyToken=31d4f244-d179-483f-9e02-5052cc21817a, parentShardIds=[shardId-00000001528901235243-889c8a3f], checkpoint={SequenceNumber: TRIM_HORIZON,SubsequenceNumber: 0}] 
+2018-06-13 12:08:33,492 INFO [com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher] - Initializing shard shardId-00000001528872434889-5f4f7d48 with TRIM_HORIZON 
+2018-06-13 12:08:33,579 WARN [com.amazonaws.services.kinesis.metrics.impl.CWPublisherRunnable] - Could not publish 14 datums to CloudWatch 
+com.amazonaws.services.cloudwatch.model.AmazonCloudWatchException: User: arn:aws:iam::173840052742:user/dfan is not authorized to perform: cloudwatch:PutMetricData (Service: AmazonCloudWatch; Status Code: 403; Error Code: AccessDenied; Request ID: 2aaf9bd9-6f3d-11e8-9b22-0949e58c5157)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1640)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1304)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.cloudwatch.AmazonCloudWatchClient.doInvoke(AmazonCloudWatchClient.java:1401)
+	at com.amazonaws.services.cloudwatch.AmazonCloudWatchClient.invoke(AmazonCloudWatchClient.java:1377)
+	at com.amazonaws.services.cloudwatch.AmazonCloudWatchClient.executePutMetricData(AmazonCloudWatchClient.java:1284)
+	at com.amazonaws.services.cloudwatch.AmazonCloudWatchClient.putMetricData(AmazonCloudWatchClient.java:1260)
+	at com.amazonaws.services.kinesis.metrics.impl.DefaultCWMetricsPublisher.publishMetrics(DefaultCWMetricsPublisher.java:63)
+	at com.amazonaws.services.kinesis.metrics.impl.CWPublisherRunnable.runOnce(CWPublisherRunnable.java:144)
+	at com.amazonaws.services.kinesis.metrics.impl.CWPublisherRunnable.run(CWPublisherRunnable.java:90)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-13 12:08:33,695 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoSuchMethodError: com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.addMixIn(Ljava/lang/Class;Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchMethodError: com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.addMixIn(Ljava/lang/Class;Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoSuchMethodError: com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.addMixIn(Ljava/lang/Class;Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.<init>(RecordObjectMapper.java:85)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter.<clinit>(RecordAdapter.java:41)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:33,905 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:34,114 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:34,320 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:34,530 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:34,737 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:34,946 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:35,154 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:35,361 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:35,566 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:35,776 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:35,984 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:36,188 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:36,397 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:36,602 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:36,811 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:37,020 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:37,229 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:37,435 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:37,644 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:37,846 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:38,054 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:38,264 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:38,474 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:38,676 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:38,886 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:39,091 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:39,294 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:39,504 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:39,713 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:39,917 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:40,124 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:40,330 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:40,537 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:40,745 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:40,947 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:41,156 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:41,361 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:41,567 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:41,775 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:41,976 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:42,184 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:42,387 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:42,589 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:42,796 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:43,001 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:43,206 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:43,409 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+2018-06-13 12:08:43,614 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds! 
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+	... 5 more
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+	at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+	at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.KinesisProxy.get(KinesisProxy.java:158)
+	at com.amazonaws.services.kinesis.clientlibrary.proxies.MetricsCollectingKinesisProxyDecorator.get(MetricsCollectingKinesisProxyDecorator.java:74)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.KinesisDataFetcher.getRecords(KinesisDataFetcher.java:68)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResultAndRecordMillisBehindLatest(ProcessTask.java:371)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.getRecordsResult(ProcessTask.java:336)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ProcessTask.call(ProcessTask.java:153)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:49)
+	at com.amazonaws.services.kinesis.clientlibrary.lib.worker.MetricsCollectingTaskDecorator.call(MetricsCollectingTaskDecorator.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more

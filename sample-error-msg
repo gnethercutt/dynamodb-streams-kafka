@@ -1,0 +1,35 @@
+2018-06-13 12:08:33,695 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoSuchMethodError: com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.addMixIn(Ljava/lang/Class;Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+        at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoSuchMethodError: com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.addMixIn(Ljava/lang/Class;Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+        at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+        at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+        ... 5 more
+Caused by: java.lang.NoSuchMethodError: com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.addMixIn(Ljava/lang/Class;Ljava/lang/Class;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+        at com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordObjectMapper.<init>(RecordObjectMapper.java:85)
+        at com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter.<clinit>(RecordAdapter.java:41)
+        at com.amazonaws.services.dynamodbv2.streamsadapter.model.GetRecordsResultAdapter.<init>(GetRecordsResultAdapter.java:51)
+        at com.amazonaws.services.dynamodbv2.streamsadapter.AmazonDynamoDBStreamsAdapterClient.getRecords(AmazonDynamoDBStreamsAdapterClient.java:448)
+
+
+
+
+2018-06-13 12:08:43,614 ERROR [com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker] - Worker.run caught exception, sleeping for 100 milli seconds!
+java.lang.RuntimeException: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:190)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.checkAndSubmitNextTask(ShardConsumer.java:135)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.consumeShard(ShardConsumer.java:123)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.runProcessLoop(Worker.java:381)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.Worker.run(Worker.java:364)
+        at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NoClassDefFoundError: Could not initialize class com.amazonaws.services.dynamodbv2.streamsadapter.model.RecordAdapter
+        at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+        at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+        at com.amazonaws.services.kinesis.clientlibrary.lib.worker.ShardConsumer.determineTaskOutcome(ShardConsumer.java:181)
+        ... 5 more
