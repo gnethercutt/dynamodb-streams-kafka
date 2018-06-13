@@ -26,11 +26,11 @@ mvn clean package;
 Note this, this step we may not need fat jar, either should be working
 java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -c
 
-7. start the flink adapter (this is where we have problem)
+7. start the flink adapter 
 cd {Dan-flink-job-test-folder}
-java -jar target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar -f src/main/resources/example.conf
-Note that, if we do mvn clean package. the fat jar does not work either. same error
 java -jar target/dynamodb-streams-kafka-0.1-SNAPSHOT-jar-with-dependencies.jar  -f src/main/resources/example.conf
 
 8. use the flink adapter to generate traffic 
 java -cp target/dynamodb-streams-kafka-0.1-SNAPSHOT.jar org.nethercutt.aws.dynamodb.kafka.StreamAdapterDemoHelper -t
+
+9. check the kafka console consumer
